@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasteluna</title>
+    <link rel="icon" href="./Img/Pasteluna-sinfondo.png" />
+    <link rel="stylesheet" href="./Style/Style.css" />
+</head>
+
+<body>
+    <nav>
+        <img src="./Img/Pasteluna-sinfondo.png" alt="logo de pasteeluna" class="logo" />
+        <ul>
+            <li class="barnav"><a class="barnav" href="#menu">menu</a></li>
+            <li class="barnav"><a class="barnav" href="#envio">envio</a></li>
+            <li class="barnav"><a class="barnav" href="#acercaDe">acerca de</a></li>
+            <li class="barnav">
+                <a class="barnav" href="./views/admin.html">admin</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header"></header>
+    <section class="menu">
+        <h2 id="menu" class="titulo">MENU</h2>
+        <div class="menu">
+            <div class="lista-menu">
+                <h3 class="subtitulo">Sabores</h3>
+                <ul>
+                    <li>Fresa .........40</li>
+                    <li>Chocolate ..40</li>
+                    <li>Limon .......40</li>
+                    <li>Vainilla ....40</li>
+                </ul>
+            </div>
+            <div class="lista-menu">
+                <h3 class="subtitulo">Adornos</h3>
+                <ul>
+                    <li>Frutas .........40</li>
+                    <li>Fondant ......45</li>
+                    <li>Chantilly ....30</li>
+                    <li>Merengue ...30</li>
+                    <li>Caramelo ....45</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="envio">
+        <h2 id="envio" class="titulo">ENVIO</h2>
+        <form class="formulario">
+            <div class="formulario">
+                <div class="seleccion-pastel">
+                <div class="div-formulario-pastel">
+                    <h3 class="subtitulo formulario">sabores</h3>
+                    <input type="checkbox" name="sabores" id="fresa" value="fresa" />
+                    <label for="fresa">Fresa</label><br />
+                    <input type="checkbox" name="sabores" id="chocolate" value="chocolate" />
+                    <label for="chocolate">Chocolate</label><br />
+                    <input type="checkbox" name="sabores" id="limon" value="limon" />
+                    <label for="limon">Limon</label><br />
+                    <input type="checkbox" name="sabores" id="vainilla" value="vainilla" />
+                    <label for="vainilla">Vainilla</label>
+                </div>
+                <div class="div-formulario-pastel">
+                    <h3>adornos</h3>
+                    <input type="checkbox" name="adornos" id="frutas" value="frutas" />
+                    <label for="frutas">Frutas</label><br />
+                    <input type="checkbox" name="adornos" id="fondant" value="fondant" />
+                    <label for="fondant">Fondant</label><br />
+                    <input type="checkbox" name="adornos" id="chantilly" value="chantilly" />
+                    <label for="chantilly">Chantilly</label><br />
+                    <input type="checkbox" name="adornos" id="merengue" value="merengue" />
+                    <label for="merengue">Merengue</label><br />
+                    <input type="checkbox" name="adornos" id="carameloSuave" value="carameloSuave" />
+                    <label for="carameloSuave">Caramelo Suave</label>
+                </div> 
+            </div>
+                <div class="div-formulario">
+                    <label  class="label-box margin-negativo" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre.." />
+                    <label  class="label-box margin-negativo" for="telefono">Telefono</label>
+                    <input type="number" name="telefono" id="telefono" placeholder="Escribe tu telefono.."
+                        maxlength="10" />
+                    <label  class="label-box margin-negativo" for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="Escribe tu correo..." />
+                    <label  class="label-box" for="descripcionGeneral">Descripcion General</label>
+                    <textarea name="descripcionGeneral" id="descripcionGeneral" cols="30" rows="5"
+                        placeholder="Mas detalles">
+            </textarea>
+                    <input type="submit" value="Enviar pastel" />
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <h2 id="acercaDe" class="titulo">ACERCA DE</h2>
+        <h3>direccion</h3>
+        <a href="https://goo.gl/maps/imBUCSM43uAqQnZc6">Av. Paseo de la Reforma 347, Cuauhtémoc</a>
+        <h3>telefono</h3>
+        <p>
+            5577446622 <br />
+            5566337744
+        </p>
+        <h3>Horarios de atencion</h3>
+        <p>Lunes - Sabado: 8:00 am - 6:00 pm</p>
+    </footer>
+</body>
+
+</html>
