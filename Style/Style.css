@@ -12,13 +12,17 @@ body{
 footer{
     position: relative;
     top: 0;
+    background: linear-gradient(180deg, #f8eaff, #edd0fd);
+    height: 10em;
+    display: flex;
+    flex-flow: column wrap;
 }
 h2.titulo{
     position: absolute;
     top: 0;
 }
 header{
-    position: sticky;
+    position: sticky; 
     top: 0;
     left: 0;
     background-color: #f8eafff7;
@@ -32,12 +36,15 @@ nav{
 a.barnav{
     text-decoration: none;
 }
+li{
+    margin: 0.5em;
+}
 li.barnav{
     display: inline;
     padding-right: .5em;
 }
 img.logo{
-    height: 12vh;
+    height: 10vh;
 }
 section{
     position: relative;
@@ -47,7 +54,7 @@ section{
     align-items: center;
     font-size: 2em;
     justify-content: center;
-    height: 88vh;
+    height: 90vh;
     width: 100%;
 }
 /* menu*/
@@ -56,18 +63,16 @@ section.menu{
 }
 div.menu{
     display: flex;
+    width: 75vw;
+    margin: auto;
     flex-flow: row wrap;
     align-items: stretch;
-    justify-content: center;
-    column-gap: 5em;
+    justify-content: space-around;
 
 }
 ul{
     padding: 0;
     list-style-type: none;
-}
-li{
-    margin: .5em;
 }
 div.lista-menu{
     font-size: .75em;
@@ -83,36 +88,50 @@ div.lista-menu{
 section.envio{
     background: linear-gradient(360deg, #ffa8dc, #8b73ff);
 }
-form.formulario{
-    display: flex;
-    flex-flow: row wrap;
-
-}
-label{
-    font-size: .5em;
-}
-label.label-box{
-    display: block;
-    font-size: .4em;
-}
 div.formulario{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: stretch;
+    align-content: space-around;
     column-gap: 10vw;
+    box-shadow: .15em .18em .25em black;
+    border-radius: 10px;
+    padding: 0 .5em .5em;
 }
 div.seleccion-pastel{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 5vw;
-    align-items: flex-start;
+    align-items: stretch;
 }
-.div-formulario{
+label{
+    font-size: .6em;
+}
+ul.seleccion-formulario{
+    margin: -16px;
+    display: block;
+    padding: -15px;
+}
+li.seleccion-formulario{
+    margin: 0px;
+}
+.form-datos-envio{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-
+}
+@media (max-width: 489px) {
+    body{
+        font-size: 12px
+    }
+    
+}
+@media (max-width: 550px) and (min-width: 490px) {
+    body{
+        font-size: 14px
+    }
+    
 }

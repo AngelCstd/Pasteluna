@@ -12,23 +12,23 @@
 
 <body>
     <header>
-    <nav>
-        <img src="./Img/Pasteluna-sinfondo.png" alt="logo de pasteeluna" class="logo" />
-        <ul>
-            <li class="barnav"><a class="barnav" href="#menu">menu</a></li>
-            <li class="barnav"><a class="barnav" href="#envio">envio</a></li>
-            <li class="barnav"><a class="barnav" href="#acercaDe">acerca de</a></li>
-            <li class="barnav">
-                <a class="barnav" href="./views/admin.html">admin</a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <img src="./Img/Pasteluna-sinfondo.png" alt="logo de pasteeluna" class="logo" />
+            <ul>
+                <li class="barnav"><a class="barnav" href="#menu">menu</a></li>
+                <li class="barnav"><a class="barnav" href="#envio">envio</a></li>
+                <li class="barnav"><a class="barnav" href="#acercaDe">acerca de</a></li>
+                <li class="barnav">
+                    <a class="barnav" href="./views/admin.html">admin</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section class="menu">
         <h2 id="menu" class="titulo">MENU</h2>
         <div class="menu">
             <div class="lista-menu">
-                <h3 class="subtitulo">Sabores</h3>
+                <h3>Sabores</h3>
                 <ul>
                     <li>Fresa .........40</li>
                     <li>Chocolate ..40</li>
@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <div class="lista-menu">
-                <h3 class="subtitulo">Adornos</h3>
+                <h3>Adornos</h3>
                 <ul>
                     <li>Frutas .........40</li>
                     <li>Fondant ......45</li>
@@ -50,46 +50,46 @@
     </section>
     <section class="envio">
         <h2 id="envio" class="titulo">ENVIO</h2>
-        <form class="formulario">
+        <form>
             <div class="formulario">
                 <div class="seleccion-pastel">
-                <div class="div-formulario-pastel">
-                    <h3 class="subtitulo formulario">sabores</h3>
-                    <input type="checkbox" name="sabores" id="fresa" value="fresa" />
-                    <label for="fresa">Fresa</label><br />
-                    <input type="checkbox" name="sabores" id="chocolate" value="chocolate" />
-                    <label for="chocolate">Chocolate</label><br />
-                    <input type="checkbox" name="sabores" id="limon" value="limon" />
-                    <label for="limon">Limon</label><br />
-                    <input type="checkbox" name="sabores" id="vainilla" value="vainilla" />
-                    <label for="vainilla">Vainilla</label>
+                    <div class="seleccion-formulario">
+                        <h3 class="subtitulo formulario">sabores</h3>
+                        <input type="checkbox" name="sabores" id="fresa" value="fresa" />
+                        <label for="fresa">Fresa</label><br />
+                        <input type="checkbox" name="sabores" id="chocolate" value="chocolate" />
+                        <label for="chocolate">Chocolate</label><br />
+                        <input type="checkbox" name="sabores" id="limon" value="limon" />
+                        <label for="limon">Limon</label><br />
+                        <input type="checkbox" name="sabores" id="vainilla" value="vainilla" />
+                        <label for="vainilla">Vainilla</label>
+                    </div>
+                    <div class="seleccion-formulario">
+                        <h3>adornos</h3>
+                        <input type="checkbox" name="adornos" id="frutas" value="frutas" />
+                        <label for="frutas">Frutas</label><br>
+                        <input type="checkbox" name="adornos" id="fondant" value="fondant" />
+                        <label for="fondant">Fondant</label><br>
+                        <input type="checkbox" name="adornos" id="chantilly" value="chantilly" />
+                        <label for="chantilly">Chantilly</label><br>
+                        <input type="checkbox" name="adornos" id="merengue" value="merengue" />
+                        <label for="merengue">Merengue</label><br>
+                        <input type="checkbox" name="adornos" id="carameloSuave" value="carameloSuave" />
+                        <label for="carameloSuave">Caramelo</label>
+                    </div>
                 </div>
-                <div class="div-formulario-pastel">
-                    <h3>adornos</h3>
-                    <input type="checkbox" name="adornos" id="frutas" value="frutas" />
-                    <label for="frutas">Frutas</label><br />
-                    <input type="checkbox" name="adornos" id="fondant" value="fondant" />
-                    <label for="fondant">Fondant</label><br />
-                    <input type="checkbox" name="adornos" id="chantilly" value="chantilly" />
-                    <label for="chantilly">Chantilly</label><br />
-                    <input type="checkbox" name="adornos" id="merengue" value="merengue" />
-                    <label for="merengue">Merengue</label><br />
-                    <input type="checkbox" name="adornos" id="carameloSuave" value="carameloSuave" />
-                    <label for="carameloSuave">Caramelo Suave</label>
-                </div> 
-            </div>
-                <div class="div-formulario">
-                    <label  class="label-box margin-negativo" for="nombre">Nombre</label>
+                <div class="form-datos-envio">
+                    <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre.." />
-                    <label  class="label-box margin-negativo" for="telefono">Telefono</label>
+                    <label for="telefono">Telefono</label>
                     <input type="number" name="telefono" id="telefono" placeholder="Escribe tu telefono.."
                         maxlength="10" />
-                    <label  class="label-box margin-negativo" for="correo">Correo</label>
+                    <label for="correo">Correo</label>
                     <input type="email" name="correo" id="correo" placeholder="Escribe tu correo..." />
-                    <label  class="label-box" for="descripcionGeneral">Descripcion General</label>
-                    <textarea name="descripcionGeneral" id="descripcionGeneral" cols="30" rows="5"
+                    <label for="descripcionGeneral">Descripcion General</label>
+                    <textarea name="descripcionGeneral" id="descripcionGeneral" cols="20" rows="3"
                         placeholder="Mas detalles">
-            </textarea>
+                    </textarea>
                     <input type="submit" value="Enviar pastel" />
                 </div>
             </div>
