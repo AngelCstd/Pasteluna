@@ -18,9 +18,7 @@
                 <li class="barnav"><a class="barnav" href="#menu">menu</a></li>
                 <li class="barnav"><a class="barnav" href="#envio">envio</a></li>
                 <li class="barnav"><a class="barnav" href="#acercaDe">acerca de</a></li>
-                <li class="barnav">
-                    <a class="barnav" href="./views/admin.html">admin</a>
-                </li>
+                <li class="barnav"><a class="barnav" href="./views/admin.html">admin</a></li>
             </ul>
         </nav>
     </header>
@@ -54,7 +52,7 @@
             <div class="formulario">
                 <div class="seleccion-pastel">
                     <div class="seleccion-formulario">
-                        <h3 class="subtitulo formulario">sabores</h3>
+                        <h3>Sabores</h3>
                         <input type="checkbox" name="sabores" id="fresa" value="fresa" />
                         <label for="fresa">Fresa</label><br />
                         <input type="checkbox" name="sabores" id="chocolate" value="chocolate" />
@@ -65,31 +63,31 @@
                         <label for="vainilla">Vainilla</label>
                     </div>
                     <div class="seleccion-formulario">
-                        <h3>adornos</h3>
+                        <h3>Adornos</h3>
                         <input type="checkbox" name="adornos" id="frutas" value="frutas" />
-                        <label for="frutas">Frutas</label><br>
+                        <label for="frutas">Frutas</label><br />
                         <input type="checkbox" name="adornos" id="fondant" value="fondant" />
-                        <label for="fondant">Fondant</label><br>
+                        <label for="fondant">Fondant</label><br />
                         <input type="checkbox" name="adornos" id="chantilly" value="chantilly" />
-                        <label for="chantilly">Chantilly</label><br>
+                        <label for="chantilly">Chantilly</label><br />
                         <input type="checkbox" name="adornos" id="merengue" value="merengue" />
-                        <label for="merengue">Merengue</label><br>
+                        <label for="merengue">Merengue</label><br />
                         <input type="checkbox" name="adornos" id="carameloSuave" value="carameloSuave" />
                         <label for="carameloSuave">Caramelo</label>
                     </div>
                 </div>
-                <div class="form-datos-envio">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre.." />
-                    <label for="telefono">Telefono</label>
-                    <input type="number" name="telefono" id="telefono" placeholder="Escribe tu telefono.."
+                <div class="form-datos-envio"><br>
+                    <input class="input-form" type="text" name="nombre" id="nombre" placeholder="  " />
+                    <label class="label-form" for="nombre">Nombre</label>
+                    <input class="input-form" type="number" name="telefono" id="telefono" placeholder="  "
                         maxlength="10" />
-                    <label for="correo">Correo</label>
-                    <input type="email" name="correo" id="correo" placeholder="Escribe tu correo..." />
+                    <label class="label-form" for="telefono">Telefono</label>
+                    <input class="input-form" type="email" name="correo" id="correo" placeholder=" " />
+                    <label class="label-form" for="correo">Correo</label>
                     <label for="descripcionGeneral">Descripcion General</label>
                     <textarea name="descripcionGeneral" id="descripcionGeneral" cols="20" rows="3"
                         placeholder="Mas detalles">
-                    </textarea>
+            </textarea>
                     <input type="submit" value="Enviar pastel" />
                 </div>
             </div>
@@ -97,15 +95,20 @@
     </section>
     <footer>
         <h2 id="acercaDe" class="titulo">ACERCA DE</h2>
-        <h3>direccion</h3>
-        <a href="https://goo.gl/maps/imBUCSM43uAqQnZc6">Av. Paseo de la Reforma 347, Cuauhtémoc</a>
-        <h3>telefono</h3>
-        <p>
-            5577446622 <br />
-            5566337744
-        </p>
-        <h3>Horarios de atencion</h3>
-        <p>Lunes - Sabado: 8:00 am - 6:00 pm</p>
+        <div class="div-footer">
+            <h3>DIRECCION</h3>
+            <a href="https://goo.gl/maps/imBUCSM43uAqQnZc6">Av. Paseo de la Reforma 347, Cuauhtémoc</a><br>
+            <h3>HORARIOS DE ATENCION</h3>
+            <p>Lunes - Sabado: 8:00 am - 6:00 pm</p>
+        </div>
+        <div class="div-footer telefono">
+            <h3>TELEFONO</h3>
+            <p>
+                5577446622 </p>
+            <p>
+                5566337744
+            </p>
+        </div>
     </footer>
 </body>
 

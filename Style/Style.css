@@ -9,14 +9,6 @@ html{
 body{
     font-size: 16px;
 }
-footer{
-    position: relative;
-    top: 0;
-    background: linear-gradient(180deg, #f8eaff, #edd0fd);
-    height: 10em;
-    display: flex;
-    flex-flow: column wrap;
-}
 h2.titulo{
     position: absolute;
     top: 0;
@@ -57,7 +49,7 @@ section{
     height: 90vh;
     width: 100%;
 }
-/* menu*/
+/* ***************menu********** */
 section.menu{
     background: linear-gradient(180deg, #ffa8dc, #8b73ff);
 }
@@ -84,7 +76,7 @@ div.lista-menu{
     justify-content: space-evenly;
     padding: .8em;
 }
-/* envio*/
+/* ************envio************** */
 section.envio{
     background: linear-gradient(360deg, #ffa8dc, #8b73ff);
 }
@@ -121,15 +113,56 @@ li.seleccion-formulario{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+    align-items: flex-start;
+}
+/* **********footer********** */
+footer{
+    position: relative;
+    top: 0;
+    background: linear-gradient(180deg, #f8eaff, #edd0fd);
+    height: 10em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
-@media (max-width: 489px) {
+div.div-footer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+/************input*************/
+.input-form{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+.label-form{
+    font-size: .5em;
+    cursor: text;
+    position: relative;
+    top: -1.7rem;
+    transform: translateY(.62rem);
+    transition: transform .5s color .3s;
+}
+.input-form:not(:placeholder-shown){
+    color: #000;
+}
+.input-form:not(:placeholder-shown) + .label-form{
+    transform: translateY(-.25rem) scale(.7);
+    transform-origin: left top;
+    color: #000;
+} 
+@media (max-width: 500px) {
     body{
         font-size: 12px
     }
     
 }
-@media (max-width: 550px) and (min-width: 490px) {
+@media (max-width: 550px) and (min-width: 500px) {
     body{
         font-size: 14px
     }
