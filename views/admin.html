@@ -1,113 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es_mx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Administrador</title>
-    <link rel="icon" href="./Img/Logo.png">
+    <link rel="icon" href="./Img/Logo.png" />
+    <link rel="stylesheet" href="../Style/headeryfooter.css" />
+    <link rel="stylesheet" href="../Style/admin.css" />
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">menu</a></li>
-            <li><a href="../index.html">creacion</a></li>
-            <li><a href="../index.html">acerca de</a></li>
-            <li><a href="../views/admin.html">administrador</a></li>
-        </ul>
-    </nav>
     <header>
-        <img src="./Img/Logo.png" alt="logo de pasteeluna" width="200" />
-        <img src="./Img/Eslogan.png" alt="eslogan de pasteluna" width="200" />
+        <nav>
+            <img src="../Img/Pasteluna-sinfondo.png" alt="logo de pasteeluna" />
+            <ul>
+                <li><a href="../index.html">Cliente</a></li>
+                <li><a href="#acercade">acerca de</a></li>
+                <li><a href="../views/admin.html">administrador</a></li>
+            </ul>
+        </nav>
     </header>
     <section>
-        <table>
-            <tr>
-                <th>Sabor</th>
-                <th>Sobrante</th>
-            </tr>
-            <tr>
-                <td>fresa</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>chocolate</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>limon</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>vainilla</td>
-                <td>2</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>Adorno</th>
-                <th>Sobrante</th>
-            </tr>
-            <tr>
-                <td>frutas</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>fondant</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>chantilly</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>merengue</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>caramelo suave</td>
-                <td>2</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>id</th>
-                <th>nombre</th>
-                <th>telefono</th>
-                <th>correo</th>
-                <th>sabores</th>
-                <th>adornos</th>
-                <th>descripcion general</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>juan</td>
-                <td>5544788956</td>
-                <td>juan@dominio.com</td>
-                <td>fresa</td>
-                <td>chantilly</td>
-                <td>que diga arriba felicidades</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>emma</td>
-                <td>5566887799</td>
-                <td>emma@dominio.com</td>
-                <td>chocolate <br> fresa</td>
-                <td>caramelo suave</td>
-                <td>que solo tenga caramelo a los costados</td>
-            </tr>
-        </table>
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sabor</th>
+                        <th>Sobrante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fresa</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>chocolate</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>limon</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>vainilla</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>            
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Adorno</th>
+                        <th>Sobrante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>frutas</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>fondant</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>chantilly</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>merengue</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>caramelo suave</td>
+                        <td>2</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <div class="pedidos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>nombre</th>
+                            <th>telefono</th>
+                            <th>correo</th>
+                            <th>sabores</th>
+                            <th>adornos</th>
+                            <th>descripcion general</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>juan</td>
+                            <td>5544788956</td>
+                            <td>juan@dominio.com</td>
+                            <td>fresa</td>
+                            <td>chantilly</td>
+                            <td>que diga arriba felicidades</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>emma</td>
+                            <td>5566887799</td>
+                            <td>emma@dominio.com</td>
+                            <td>
+                                chocolate <br />
+                                fresa
+                            </td>
+                            <td>caramelo suave</td>
+                            <td>que solo tenga caramelo a los costados</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
     <footer>
         <h2 id="acercaDe">ACERCA DE</h2>
-        <h3>direccion</h3>
-        <a href="https://goo.gl/maps/imBUCSM43uAqQnZc6">Av. Paseo de la Reforma 347, Cuauhtémoc</a>
-        <h3>telefono</h3>
-        <p>5577446622 <br> 5566337744</p>
-        <h3>Horarios de atencion</h3>
-        <p>Lunes - Sabado: 8:00 am - 6:00 pm</p>
+        <div>
+            <h3>DIRECCION</h3>
+            <a href="https://goo.gl/maps/imBUCSM43uAqQnZc6">Av. Paseo de la Reforma 347, Cuauhtémoc</a><br />
+            <h3>HORARIOS DE ATENCION</h3>
+            <p>Lunes - Sabado: 8:00 am - 6:00 pm</p>
+        </div>
+        <div>
+            <h3>TELEFONO</h3>
+            <p>5577446622</p>
+            <p>5566337744</p>
+        </div>
     </footer>
-
 </body>
+
 </html>

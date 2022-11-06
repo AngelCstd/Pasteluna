@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pasteluna</title>
     <link rel="icon" href="./Img/Pasteluna-sinfondo.png" />
-    <link rel="stylesheet" href="./Style/Style.css" />
+    <link rel="stylesheet" href="Style/headeryfooter.css">
+    <link rel="stylesheet" href="./Style/index.css" />
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="./Img/Pasteluna-sinfondo.png" alt="logo de pasteeluna" class="logo" />
+            <img src="./Img/Pasteluna-sinfondo.png" alt="logo de pasteeluna"/>
             <ul>
-                <li class="barnav"><a class="barnav" href="#menu">menu</a></li>
-                <li class="barnav"><a class="barnav" href="#envio">envio</a></li>
-                <li class="barnav"><a class="barnav" href="#acercaDe">acerca de</a></li>
-                <li class="barnav"><a class="barnav" href="./views/admin.html">admin</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#envio">envio</a></li>
+                <li><a href="#acercaDe">acerca de</a></li>
+                <li><a href="./views/admin.html">admin</a></li>
             </ul>
         </nav>
     </header>
     <section class="menu">
-        <h2 id="menu" class="titulo">MENU</h2>
+        <h2 id="menu">MENU</h2>
         <div class="menu">
-            <div class="lista-menu">
+            <div>
                 <h3>Sabores</h3>
                 <ul>
                     <li>Fresa .........40</li>
@@ -34,7 +35,7 @@
                     <li>Vainilla ....40</li>
                 </ul>
             </div>
-            <div class="lista-menu">
+            <div>
                 <h3>Adornos</h3>
                 <ul>
                     <li>Frutas .........40</li>
@@ -47,11 +48,12 @@
         </div>
     </section>
     <section class="envio">
-        <h2 id="envio" class="titulo">ENVIO</h2>
+        <h2 id="envio">ENVIO</h2>
         <form>
-            <div class="formulario">
-                <div class="seleccion-pastel">
-                    <div class="seleccion-formulario">
+            <div class="form">
+                <div class="form-pastel">
+                    <div>
+
                         <h3>Sabores</h3>
                         <input type="checkbox" name="sabores" id="fresa" value="fresa" />
                         <label for="fresa">Fresa</label><br />
@@ -61,8 +63,10 @@
                         <label for="limon">Limon</label><br />
                         <input type="checkbox" name="sabores" id="vainilla" value="vainilla" />
                         <label for="vainilla">Vainilla</label>
+
                     </div>
-                    <div class="seleccion-formulario">
+                    <div>
+
                         <h3>Adornos</h3>
                         <input type="checkbox" name="adornos" id="frutas" value="frutas" />
                         <label for="frutas">Frutas</label><br />
@@ -74,34 +78,34 @@
                         <label for="merengue">Merengue</label><br />
                         <input type="checkbox" name="adornos" id="carameloSuave" value="carameloSuave" />
                         <label for="carameloSuave">Caramelo</label>
+
                     </div>
                 </div>
-                <div class="form-datos-envio"><br>
+                <div class="form-datos"><br>
+
                     <input class="input-form" type="text" name="nombre" id="nombre" placeholder="  " />
                     <label class="label-form" for="nombre">Nombre</label>
-                    <input class="input-form" type="number" name="telefono" id="telefono" placeholder="  "
-                        maxlength="10" />
+                    <input class="input-form" type="number" name="telefono" id="telefono" placeholder="  " maxlength="10" />
                     <label class="label-form" for="telefono">Telefono</label>
                     <input class="input-form" type="email" name="correo" id="correo" placeholder=" " />
                     <label class="label-form" for="correo">Correo</label>
                     <label for="descripcionGeneral">Descripcion General</label>
-                    <textarea name="descripcionGeneral" id="descripcionGeneral" cols="20" rows="3"
-                        placeholder="Mas detalles">
-            </textarea>
+                    <textarea name="descripcionGeneral" id="descripcionGeneral" cols="20" rows="3"></textarea>
                     <input type="submit" value="Enviar pastel" />
+
                 </div>
             </div>
         </form>
     </section>
     <footer>
-        <h2 id="acercaDe" class="titulo">ACERCA DE</h2>
-        <div class="div-footer">
+        <h2 id="acercaDe">ACERCA DE</h2>
+        <div>
             <h3>DIRECCION</h3>
             <a href="https://goo.gl/maps/imBUCSM43uAqQnZc6">Av. Paseo de la Reforma 347, Cuauhtémoc</a><br>
             <h3>HORARIOS DE ATENCION</h3>
             <p>Lunes - Sabado: 8:00 am - 6:00 pm</p>
         </div>
-        <div class="div-footer telefono">
+        <div>
             <h3>TELEFONO</h3>
             <p>
                 5577446622 </p>
